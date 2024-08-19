@@ -42,6 +42,7 @@ Make sure you have Python, Node.js, and npm installed on your system.
    - Navigate to the `fyp` directory.
    - Run the Django development server:
      ```bash
+     cd fyp
      python manage.py runserver
      ```
 
@@ -49,12 +50,16 @@ Make sure you have Python, Node.js, and npm installed on your system.
    - Navigate to the `frontend` directory.
    - Start the Vite development server:
      ```bash
+     cd frontend
      npm run dev
      ```
 
 ### Usage
 
-After starting the servers, you can access the frontend interface in your browser, where you can upload chest X-ray images to classify lung diseases using the trained model.
+1. After starting the servers as mentioned above, go to `http://localhost:5173` in your browser.
+2. You can upload an X-ray image through the frontend.
+3. The image is then sent to the backend API, which processes it and returns the classification result.
+4. The result will indicate whether the person has no disease (Normal), TB, Pneumonia, or COVID-19.
 
 ### Acknowledgments
 
